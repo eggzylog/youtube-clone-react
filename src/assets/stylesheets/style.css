@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+	font-family: "Quicksand";
+	/* outline: 1px solid pink; */
+}
+
+.dark {
+	background-color: black;
+	color: white;
+}
+
+.light {
+	background-color: white;
+	color: black;
+}
+
+button.light {
+	border: 1px solid white;
+}
+
+img.display-mode {
+	width: 50px;
+	border: unset;
+}
+
+nav {
+	margin: 0;
+	padding: 0;
+	/* border-bottom: 2px solid blue; */
+}
+
+nav img.youtube {
+	margin: 0 30px;
+	width: 100px;
+}
+
+nav div.navbar-nav {
+	margin: 0 auto;
+}
+
+nav form {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.form {
+	display: flex;
+	flex-direction: row;
+	width: 350px;
+	margin: 0 auto;
+}
+
+.search-field {
+	width: 100%;
+	padding: 10px 45px 10px 15px;
+	border: 2px solid black;
+	border-radius: 100px;
+	outline: none;
+}
+
+.search-button {
+	background: transparent;
+	border: none;
+	outline: none;
+	margin-left: -50px;
+}
+
+.search-button img {
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+}
+
+main {
+	display: flex;
+}
+
+#playing-video {
+	/* border: 1px solid blue; */
+	margin: 0 10px 0 60px;
+	width: 65vw;
+}
+
+#playing-video h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#playing-video h2 {
+	font-size: 1.25rem;
+}
+
+.suggestions {
+	/* border: 1px solid pink; */
+	margin: 0 60px 0 10px;
+	width: 35vw;
+	height: 100vh;
+}
+
+.suggestion {
+	display: flex;
+}
+
+.suggestion .video {
+	padding: 10px;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.suggestion div {
+	padding: 5px;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.suggestion div a {
+	color: unset;
+	text-decoration: none;
+}
+
+.suggestion div.channel h2,
+h3 {
+	font-size: 0.9rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.suggestion div.channel h3:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+.suggestion img {
+	width: 200px;
+	cursor: pointer;
+}
+
+div.reactions {
+	display: flex;
+}
+
+div.like,
+div.dislike {
+	cursor: pointer;
+	user-select: none;
+	margin: 0 10px;
+}
+
+svg {
+	font-size: 1.25rem;
+	color: blue;
+}
+
+span {
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+div.avatar {
+	min-width: 50px;
+	height: 50px;
+	background-color: blue;
+	border-radius: 50%;
+	margin-right: 10px;
+
+	color: white;
+	font-weight: bold;
+	font-size: 1.5rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+	user-select: none;
+	text-decoration: none;
+}
+
+p.user {
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+p.comment {
+	margin: 0;
+	padding: 0;
+}
+
+div.comments-list {
+	display: flex;
+	margin: 10px 0 20px 0;
+}
+
+
+button.comment-btn {
+	display: flex;
+	margin-left: auto;
+}
