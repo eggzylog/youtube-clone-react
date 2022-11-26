@@ -27,7 +27,7 @@ class App extends Component {
 		this.setState({
 			commentList: []
 		});
-		console.log('query submitted');
+		// console.log('query submitted');
 	}
 
 	getVideos = async () => {
@@ -51,7 +51,7 @@ class App extends Component {
 		this.setState({
 			activeVid: selected,
 			commentList: []
-		}, () => console.log('new video is selected (via handleSelect): ', this.activeVid));
+		});
 	}
 
 	addComment = (e) => {
@@ -64,7 +64,7 @@ class App extends Component {
 
 		this.setState({
 			comment: ''
-		}, () => console.log('you added a comment!', this.state.commentList));
+		});
 	}
 
 	componentDidMount() {
