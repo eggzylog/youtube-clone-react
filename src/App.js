@@ -43,7 +43,7 @@ class App extends Component {
 			this.setState({
 				result: response.data.items,
 				activeVid: response.data.items[0]
-			}, () => console.log('result', this.state.result));
+			});
 		});
 	}
 
