@@ -30,7 +30,7 @@ class App extends Component {
 		// console.log('query submitted');
 	}
 
-	getVideos = async () => {
+	getVideos = () => {
 		const { maxResults, query } = this.state;
 		const url = `/search?part=snippet&maxResults=${maxResults}&q=${query}&key=${process.env.REACT_APP_VIDEO_SEARCH_API_KEY}`;
 		// get api
