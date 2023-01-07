@@ -32,7 +32,8 @@ class App extends Component {
 
 	getVideos = () => {
 		const { maxResults, query } = this.state;
-		const url = `/search?part=snippet&maxResults=${maxResults}&q=${query}&key=${process.env.REACT_APP_VIDEO_SEARCH_API_KEY}`;
+		// const url = `/search?part=snippet&maxResults=${maxResults}&q=${query}&key=${process.env.REACT_APP_VIDEO_SEARCH_API_KEY}`;
+		const url = `/search?part=snippet&maxResults=${maxResults}&q=${query}&key=AIzaSyCjfhX21nPrrbVyKSqvabjAj0dfN29kgho`;
 		// get api
 		const promise = new Promise((resolve) => {
 			const response = YoutubeAPI.get(url);
